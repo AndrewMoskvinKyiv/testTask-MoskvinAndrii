@@ -1,7 +1,8 @@
 import { Outlet, ReactLocation, Route, Router } from '@tanstack/react-location';
 import { CenteredLayout } from '~/components';
-import { Optimize1, Optimize2, Ranges, Refactor1, Refactor2 } from '~/pages';
+import {  Optimize1, Ranges, Refactor1, Refactor2, Optimize2 } from '~/pages';
 import { Header } from './header';
+import { PhotoAnnotations } from '~/pages/photo-annotations/PhotoAnnotations';
 
 const Welcome = () => (
   <CenteredLayout className="gap-4">
@@ -27,7 +28,7 @@ const routes: Route[] = [
   },
   {
     path: 'optimize-1',
-    element: <Optimize1 />,
+    element: <Optimize1/>,
   },
   {
     path: 'optimize-2',
@@ -37,11 +38,15 @@ const routes: Route[] = [
     path: 'ranges',
     element: <Ranges />,
   },
+  {
+    path: 'photo-annotations',
+    element: <PhotoAnnotations />,
+  },
 ];
 
 export const App = () => (
   <Router location={reactLocation} routes={routes}>
     <Header />
-    <Outlet />
+    <Outlet/>
   </Router>
 );

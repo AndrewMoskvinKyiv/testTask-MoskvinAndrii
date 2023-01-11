@@ -8,7 +8,7 @@ const ranges = untypedRanges as Range[];
 
 const transform = (items: Item[]) => {
   // TODO implement
-
+  console.log(items);
   return ranges;
 };
 

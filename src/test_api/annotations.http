@@ -1,0 +1,23 @@
+GET {{host}}v1/annotations
+Content-Type: application/json
+
+###
+
+POST {{host}}v1/annotations
+Content-Type: application/json
+
+{
+  "id": "345j345645",
+  "comment": "Yoy",
+  "author": "Moskvin Andrii",
+  "pos": {
+    "x": ",+mousePos.x.toFixed()",
+    "y": "+mousePos.y.toFixed()"
+  }
+}
+###
+
+DELETE {{host}}v1/annotations/10
+Content-Type: application/json
+
+###
