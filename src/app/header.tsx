@@ -5,7 +5,7 @@ const NavItem = (props: LinkProps) => {
   const matchRoute = useMatchRoute();
   const active = Boolean(matchRoute({ to: props.to }));
   return (
-    <li className="px-4">
+    <li className="px-4 z-100">
       <Link
         {...props}
         className={clsx(
@@ -30,6 +30,7 @@ export const Header = () => (
         <NavItem to="/optimize-1">Optimize 1</NavItem>
         <NavItem to="/optimize-2">Optimize 2</NavItem>
         <NavItem to="/ranges">Ranges</NavItem>
+        <NavItem to="/photo-annotations">Photo annotations</NavItem>
       </ul>
     </nav>
   </header>

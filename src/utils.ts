@@ -3,7 +3,7 @@ import { useRef } from 'react';
 
 export const useRenderHighlight = (className: string) => {
   // TODO fix any
-  const ref = useRef<any>(null);
+  const ref = useRef<HTMLLIElement | null>(null);
 
   if (ref.current) {
     ref.current.classList.add(className);
@@ -18,7 +18,7 @@ export const useRenderHighlight = (className: string) => {
 };
 
 // TODO fix any
-export const range = (n: number, fn: (n: number) => any) => {
+export const range = (n: number, fn: (n: number) =>  number) => {
   const result = [];
   for (let i = 0; i < n; i++) {
     result.push(fn(i + 1));
@@ -27,7 +27,7 @@ export const range = (n: number, fn: (n: number) => any) => {
 };
 
 // TODO fix any
-export const chooseRandomly = (items: any[]) => {
+export const chooseRandomly = (items: number[]) => {
   const index = Math.floor(Math.random() * items.length);
   return items[index];
 };

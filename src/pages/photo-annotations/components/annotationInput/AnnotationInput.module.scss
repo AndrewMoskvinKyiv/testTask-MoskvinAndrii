@@ -1,0 +1,42 @@
+textarea:focus, input:focus{
+  outline: none;
+}
+.create_anotContainer{
+  display: flex;
+  align-items: center;
+
+.create_anotInner{
+  display: flex;
+  align-items: center;
+  gap:10px;
+  justify-content: space-around;
+  .input_title{
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #9398A2;
+    background-color: #EFEFF0;
+    border-bottom: 1px solid #9da0a6;
+    margin: 15px 25px 15px 25px;
+  }
+  .input_icon {
+    color: #0A7ABF;
+    font-size: 20px;
+  }
+}
+  .span_title {
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #9398A2;
+    background-color: #EFEFF0;
+    border-bottom: 1px solid #9da0a6;
+    margin: 15px 25px 15px 25px;
+  }
+
+}
+
